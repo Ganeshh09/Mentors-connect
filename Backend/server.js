@@ -12,21 +12,21 @@ import axios from "axios";
 
 dotenv.config();
 
-const port = process.env.port || 3000;
+const port = process.env.port || 5000;
 
 const app = express();
 const jwtpassword = process.env.jwtpassword;
 const server = http.createServer(app);
 app.use(
   cors({
-    origin: "https://mentors-connect.vercel.app",
+    origin: "https://mentors-connect-20.vercel.app",
     credentials: true,
   })
 );
 
 const io = new Server(server, {
   cors: {
-    origin: "https://mentors-connect.vercel.app",
+    origin: "https://mentors-connect-20.vercel.app",
     methods: ["GET", "POST"],
     credentials: true,
   },
