@@ -20,7 +20,7 @@ const Message = () => {
   useEffect(() => {
     const check_cookie = async () => {
       const response = await axios.post(
-        "hhttps://mentors-connect-2-ai02.onrender.com/check-cookie",
+        "https://mentors-connect-2-ai02.onrender.com/check-cookie",
         {},
         {
           withCredentials: true,
